@@ -4,10 +4,12 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
 }
 
 body {
-  margin: 0px
+  margin: 0px;
+  overflow-x: hidden !important;
 }
 
 article,
@@ -9479,6 +9481,12 @@ section.one .button:hover{
   position: relative;
   margin-bottom: 30px;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+@media (max-width:768px) {
+  .block {
+    height: 500px;
+  }
 }
 
 .block.block1 {

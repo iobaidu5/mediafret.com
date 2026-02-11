@@ -14,10 +14,10 @@ jQuery(document).ready(function ($) {
 
   function sendFormData(e, id, type) {
     e.preventDefault();
-    if (grecaptcha.getResponse().length == 0) {
-      alert("Veuillez vérifier le reCAPTCHA");
-      return false;
-    }
+    // if (grecaptcha.getResponse().length == 0) {
+    //   alert("Veuillez vérifier le reCAPTCHA");
+    //   return false;
+    // }
 
   //   if (!checkbox.checked) {
   //     checkboxError.textContent = "Le formulaire n'est pas envoyé tant que vous n'acceptez pas ce point";
