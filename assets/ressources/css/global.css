@@ -9121,7 +9121,7 @@ header.slider {
 }
 
 header .middle {
-  width: 90%;
+  width: 100% ;
   margin: auto;
   position: absolute;
   left: 50%;
@@ -9486,6 +9486,16 @@ section.one .button:hover{
 @media (max-width:768px) {
   .block {
     height: 500px;
+  }
+}
+
+@media (max-width:400px) {
+  .block {
+    height: 650px;
+  }
+
+  .inner-block{
+    width: 95% !important;
   }
 }
 
@@ -10023,7 +10033,7 @@ footer p {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   nav a {
     font-size: 18px;
