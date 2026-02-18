@@ -2007,7 +2007,7 @@ table th[class*=col-] {
   background-color: #ebcccc
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -3878,7 +3878,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   line-height: 20px
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3987,7 +3987,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .navbar-form .form-group {
     margin-bottom: 5px
   }
@@ -4118,7 +4118,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   color: #555
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #777
   }
@@ -4217,7 +4217,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   color: #fff
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header {
     border-color: #080808
   }
@@ -6131,7 +6131,7 @@ button.close {
   display: none !important
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .visible-xs {
     display: block !important
   }
@@ -6207,7 +6207,7 @@ button.close {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .hidden-xs {
     display: none !important
   }
@@ -10063,12 +10063,26 @@ footer p {
     font-size: 18px;
   }
 
+  /* Hamburger at 768px: override desktop navbar rules that use min-width:768px */
+  .navbar-header {
+    float: none !important;
+  }
+
   .navbar-toggle {
+    display: block !important;
     background-color: #005a9a;
   }
 
   .navbar-toggle .icon-bar {
     background-color: #fff;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
   }
 
   .navbar-collapse li {
